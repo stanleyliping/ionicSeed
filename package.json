@@ -1,0 +1,20 @@
+{
+  "name": "ionicseed",
+  "version": "1.1.1",
+  "description": "IonicSeed: An Ionic project",
+  "devDependencies": {
+    "gulp": "^3.5.6",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-splashscreen"
+  ],
+  "cordovaPlatforms": [],
+  "dependencies": {
+    "cordova-android": "^7.0.0"
+  }
+}
