@@ -1,0 +1,28 @@
+.user-icon{
+	height: 80px;
+    width: 80px;
+    float: left;
+	background-image: url(../../assets/image/person.png);
+}
+
+.lock-icon{
+	height: 80px;
+    width: 80px;
+    float: left;
+	background-image: url(../../assets/image/lock.png);
+}
+
+.login-icon{
+	height: 375px;
+	margin-top: -10%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url(../../assets/image/login.png);
+
+}
+
+input{
+	height: 11vw !important;
+}
+

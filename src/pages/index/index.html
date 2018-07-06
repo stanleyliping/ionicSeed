@@ -1,0 +1,18 @@
+<ion-header>
+<ion-navbar>
+<label (click)="back()">
+	<div class="logout vertical" style="margin-left: 2vw;"></div>
+</label>
+<ion-title>首页</ion-title>
+<!-- <label  (click)="refresh()">
+	<div id="refreshIcon" class="refresh-icon vertical" style="right: 20px"></div>
+</label> -->
+</ion-navbar>
+</ion-header>
+<ion-content padding>
+<div class="row">
+	<button ion-button *ngFor="let function of testFun"  [ngStyle]="{'background-image': 'url('+function.Image+')'}"  class="functionBlock" (click)="menuClick(function.realRouter)"></button>
+	<!-- <div class="functionBlock">{{a}}</div> -->
+	<!-- <input type="text" [(ngModel)]='a' name="aaa"> -->
+</div>
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+  <ion-title>{{title}}</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content scrollX="false" scrollY="false">
+<!-- <div style="background-image: url(../../assets/image/login.png);height: 400px;width: 100%;background-repeat: no-repeat;background-size: cover;"></div> -->
+  <div class="login-icon">
+  </div>
+
+  <ion-list scrollX="false" scrollY="false">
+      <ion-item style="height: 22vw;">
+        <ion-label class="user-icon"></ion-label>
+        <ion-input  type="text" placeholder="帐号" [(ngModel)]="credential.username"></ion-input>
+      </ion-item>
+
+      <ion-item style="height: 22vw;">
+        <ion-label class="lock-icon"></ion-label>
+        <ion-input  type="password" placeholder="密码" [(ngModel)]="credential.password"></ion-input>
+      </ion-item>
+
+      <!-- login btn -->
+      <div class="row">
+
+        <div class="col-100" style="text-align: center;color:red">
+          {{errorText}}
+        </div>
+      </div>
+  </ion-list>
+    <button ion-button color="secondary" style="width: 99%;margin-top: 0vw;" (click)='login()'>登录</button>
+</ion-content>
